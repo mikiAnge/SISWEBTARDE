@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guía de Git</title>
+    <link rel="stylesheet" href="/SISWEBTARDE/view/git.css">
 </head>
 <body>
+    <header>
+        <h1>Guía de Git</h1>
+    </header>
     <main>
-        <p>Investigar hacerca de los comado de git</p>
-        <p>Ejemplificar el trabado del uso de los comandos en
-            al trabajar con ramas
-        </p>
-        <p>Realizar sobre este html el diseño CSS para la presentacion
-            de lo investigado
-        </p>
+       
+        <section>
+            <h2>1. Configuración Inicial</h2>
+            <pre><code>git config --global user.name "Tu Nombre"  # Configura tu nombre de usuario en Git
+git config --global user.email "tuemail@example.com"  # Configura tu correo electrónico</code></pre>
+        </section>
+        <section>
+            <h2>2. Crear un Repositorio</h2>
+            <pre><code>git init  # Crea un nuevo repositorio de Git en el directorio actual
+git clone [URL]  # Clona un repositorio existente desde una URL</code></pre>
+        </section>
+        <section>
+            <h2>3. Trabajar con Archivos</h2>
+            <pre><code>git add [archivo]  # Añade un archivo al área de preparación (staging area)
+git add .  # Añade todos los archivos modificados al área de preparación
+git commit -m "Mensaje del commit"  # Crea un commit con los cambios añadidos y un mensaje descriptivo
+git status  # Muestra el estado de los archivos en el directorio de trabajo y el área de preparación
+git diff  # Muestra las diferencias entre los archivos modificados y su versión anterior</code></pre>
+        </section>
+        <section>
+            <h2>4. Ramas (Branches)</h2>
+            <pre><code>git branch  # Lista todas las ramas en el repositorio
+git branch [rama]  # Crea una nueva rama
+git checkout [rama]  # Cambia a la rama especificada
+git merge [rama]  # Fusiona la rama especificada con la rama actual</code></pre>
+        </section>
+        <section>
+            <h2>5. Trabajar con Repositorios Remotos</h2>
+            <pre><code>git remote add origin [URL]  # Asocia un repositorio remoto con el nombre "origin"
+git push origin [rama]  # Sube los commits de la rama local especificada al repositorio remoto
+git fetch  # Descarga cambios desde el repositorio remoto sin aplicarlos
+git pull  # Descarga y aplica los cambios desde el repositorio remoto</code></pre>
+        </section>
+        <section>
+            <h2>6. Deshacer Cambios</h2>
+            <pre><code>git reset [archivo]  # Quita el archivo del área de preparación
+git reset --soft [commit]  # Mueve el puntero del commit actual a uno anterior, manteniendo los cambios en el área de preparación
+git reset --hard [commit]  # Mueve el puntero del commit actual a uno anterior, eliminando todos los cambios realizados desde ese commit</code></pre>
+        </section>
+        <section>
+            <h2>7. Historial y Navegación</h2>
+            <pre><code>git log  # Muestra el historial de commits
+git show [commit]  # Muestra los cambios introducidos en un commit específico
+git reflog  # Muestra un registro de todos los cambios de referencias (como cambios de ramas o reversiones)</code></pre>
+        </section>
+        <section>
+            <h2>8. Etiquetas (Tags)</h2>
+            <pre><code>git tag [etiqueta]  # Crea una etiqueta para el commit actual
+git tag  # Lista todas las etiquetas en el repositorio
+git push origin [etiqueta]  # Sube una etiqueta al repositorio remoto</code></pre>
+        </section>
+        <section>
+            <h2>9. Guardar Trabajos en Progreso</h2>
+            <pre><code>git stash  # Guarda temporalmente los cambios no confirmados
+git stash apply  # Aplica los cambios guardados en el stash
+git stash drop  # Elimina el stash más reciente</code></pre>
+        </section>
+        <section>
+            <h2>Ejemplos de Uso</h2>
+            <h3>1. Crear un Repositorio Nuevo</h3>
+            <pre><code>git init  # Crea un nuevo repositorio de Git en el directorio actual</code></pre>
+            <h3>2. Crear un Archivo y Hacer un Commit Inicial</h3>
+            <pre><code>echo "print('Hola Mundo')" > hola.py
+git add hola.py
+git commit -m "Commit inicial: Añadir hola.py"</code></pre>
+            <h3>3. Crear una Nueva Rama para Añadir una Funcionalidad</h3>
+            <pre><code>git branch nueva-funcionalidad
+git checkout nueva-funcionalidad</code></pre>
+            <h3>4. Realizar Cambios en la Nueva Rama</h3>
+            <pre><code>echo "print('Funcionalidad añadida')" >> hola.py
+git add hola.py
+git commit -m "Añadir nueva funcionalidad a hola.py"</code></pre>
+            <h3>5. Fusionar la Nueva Rama con la Rama Principal</h3>
+            <pre><code>git checkout main
+git merge nueva-funcionalidad</code></pre>
+            <h3>6. Eliminar la Rama</h3>
+            <pre><code>git branch -d nueva-funcionalidad</code></pre>
+            <h3>7. Publicar los Cambios en un Repositorio Remoto</h3>
+            <pre><code>git push origin main</code></pre>
+        </section>
     </main>
+    <footer>
+        SISTEMAS INFORMATICOS SEGUNDO AÑO
+    </footer>
 </body>
 </html>
