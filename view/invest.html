@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invest.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="cuerpo">
+            <div class="titulo">
+                <h1>GITHUB</h1>
+            </div>
+            <div>
+                <h2>COMANDOS EN GitHub</h2>
+            </div>
+                <div>
+                    <p>1. **git init**: Inicializa un nuevo repositorio.</p>
+                        2. **git clone [url]**: Clona un repositorio existente en tu máquina local.</p>
+                        3. **git add [archivo]**: Agrega un archivo específico al área de preparación (staging).</p>
+                        4. **git add .**: Agrega todos los archivos cambiados al área de preparación.</p>
+                        5. **git commit -m "mensaje"**: Guarda los cambios en el repositorio local con un mensaje descriptivo.</p>
+                        6. **git status**: Muestra el estado actual del repositorio (cambios sin añadir, en el área de preparación, etc.).</p>
+                        7. **git push origin [rama]**: Envía tus cambios a la rama especificada en el repositorio remoto.</p>
+                        8. **git pull origin [rama]**: Trae los cambios del repositorio remoto a tu rama local.</p>
+                        9. **git branch**: Muestra las ramas existentes en tu repositorio.</p>
+                        10. **git checkout [rama]**: Cambia a la rama especificada.</p>
+                        11. **git merge [rama]**: Une la rama especificada con la rama actual.12. **git log**: Muestra el historial de commits en el repositorio, permitiéndote ver qué cambios se han hecho y quién los hizo.</p>
+                        13. **git diff**: Muestra las diferencias entre los archivos en tu repositorio y los cambios que aún no han sido confirmados.</p>
+                        14. **git reset [archivo]**: Deshace los cambios en un archivo específico, llevándolo al estado del último commit.</p>
+                        15. **git reset --hard**: Deshace todos los cambios en el área de trabajo y el área de preparación, regresando al último commit.</p>
+                        16. **git stash**: Guarda temporalmente los cambios no confirmados para que puedas trabajar en otra cosa sin perder tu progreso.</p>
+                        17. **git stash pop**: Restaura los cambios que guardaste con `git stash`.</p>
+                        18. **git remote -v**: Muestra las URL de los repositorios remotos asociados con tu repositorio local.</p>
+                        19. **git fetch**: Descarga información sobre las ramas y commits desde el repositorio remoto sin fusionarlos con tu rama actual.</p>
+                        20. **git rebase [rama]**: Aplica tus cambios encima de otra rama, lo que puede ayudar a mantener un historial más limpio.</p>
+                        21. **git tag [nombre]**: Crea una etiqueta (tag) en un commit específico, útil para marcar versiones importantes.</p>
+                        22. **git cherry-pick [commit]**: Aplica los cambios de un commit específico a tu rama actual. Esto es útil cuando quieres llevar un cambio de otra rama sin fusionar toda la rama.</p>
+                        23. **git revert [commit]**: Crea un nuevo commit que deshace los cambios realizados en el commit especificado. Es una forma segura de deshacer cambios en el historial.</p>
+                        24. **git blame [archivo]**: Muestra quién cambió cada línea de un archivo y en qué commit se hicieron esos cambios. Muy útil para rastrear la historia de un archivo.</p>
+                        25. **git config --global user.name "[tu nombre]"**: Configura tu nombre de usuario para todos los repositorios en tu máquina.</p>
+                        26. **git config --global user.email "[tu correo]"**: Configura tu correo electrónico para que se asocie con tus commits.</p>
+                        27. **git clean -f**: Elimina archivos no rastreados del directorio de trabajo. Útil para limpiar el espacio de trabajo.</p>
+                        28. **git remote add [nombre] [url]**: Agrega un nuevo repositorio remoto con un nombre específico.</p>
+                        29. **git branch -d [rama]**: Elimina una rama local que ya ha sido fusionada con otra rama.</p>
+                        30. **git branch -D [rama]**: Fuerza la eliminación de una rama local, incluso si no ha sido fusionada.</p>
+                        31. **git merge --no-ff [rama]**: Realiza una fusión sin avance rápido, lo que crea un nuevo commit de fusión incluso si se puede hacer un avance rápido.</p>
+                        32. **git pull --rebase**: Actualiza tu rama local incorporando los cambios del repositorio remoto y rebaseando tus commits en la parte superior.</p>
+                        33. **git show [commit]**: Muestra la información completa de un commit específico, incluyendo el mensaje de commit y los cambios realizados.</p>
+                        34. **git reflog**: Muestra un registro de todas las acciones que has realizado en tu repositorio, lo que te permite recuperar commits perdidos. </p>                       
+                        35. **git fetch --prune**: Elimina las referencias a ramas remotas que han sido eliminadas en el repositorio remoto.</p>
+                        36. **git archive**: Crea un archivo comprimido (como .zip o .tar) de los archivos en un commit específico o de una rama.</p>
+                        37. **git bisect**: Realiza una búsqueda binaria para encontrar el commit que introdujo un error en el código. Muy útil para depurar problemas.</p>
+                        38. **git rebase -i [commit]**: Inicia una rebase interactiva, lo que te permite modificar la historia de commits (como reordenar, combinar o eliminar commits).</p>
+                        39. **git submodule add [url] [ruta]**: Agrega un submódulo a tu repositorio, permitiendo incluir otros repositorios dentro del tuyo.</p>
+                        40. **git submodule update --init**: Inicializa y descarga todos los submódulos en tu repositorio.</p>
+                        41. **git tag -d [nombre]**: Elimina una etiqueta local específica.</p>
+                        42. **git push origin --tags**: Envía todas las etiquetas locales al repositorio remoto.</p>
+                        43. **git clean -fd**: Elimina todos los archivos no rastreados y directorios del directorio de trabajo.</p>
+                        44. **git cherry-pick --no-commit [commit]**: Aplica los cambios de un commit específico a tu rama actual, pero no crea un nuevo commit automáticamente, permitiéndote hacer más modificaciones antes de confirmarlo.</p>
+                        45. **git reset HEAD [archivo]**: Deshace el último cambio en el área de preparación (staging area) para un archivo específico, dejándolo en el área de trabajo.</p>
+                        46. **git log --oneline**: Muestra un resumen de los commits en una sola línea, facilitando la visualización del historial.</p>
+                        47. **git log --graph**: Muestra el historial de commits en un formato gráfico, lo que es útil para visualizar ramas y fusiones.</p>
+                        48. **git pull --rebase origin [rama]**: Actualiza tu rama local con los cambios del repositorio remoto y rebasea tus cambios sobre ellos.</p>
+                        49. **git status -s**: Muestra el estado del repositorio en un formato más compacto, utilizando símbolos para indicar el estado de los archivos.</p>
+                        50. **git diff --cached**: Muestra las diferencias entre lo que está en el área de preparación y el último commit.</p>
+                </div>
+            <div>
+                <h2>Ejemplificar el trabado del uso de los comandos en al trabajar con ramas</h2>
+            </div>
+                <div>
+                    <p> 1. **Crear una Nueva Rama**:
+                        <p> En tu terminal:
+                            <p>```bash
+                               git branch nueva-caracteristica
+                            ```
+                        <p> - En GitHub: Ve a la pestaña "Branches" y encontrarás un botón para "New branch".</p>
+                        2. **Cambiar de Rama**:
+                        <p>En tu terminal:
+                            <p>```bash
+                            git checkout nueva-caracteristica
+                            ```
+                        <p> - En GitHub: No puedes cambiar de rama directamente desde la interfaz web, pero puedes seleccionar la rama que deseas ver en el menú desplegable en la parte superior.</p>
+                        3. **Crear y Cambiar a una Nueva Rama**:
+                        <p>En tu terminal:
+                            <p>```bash
+                            git checkout -b nueva-caracteristica
+                            ```
+                        <p> - En GitHub: Similar al paso anterior, crea la rama en "Branches" y luego selecciona esa rama.</p>
+                        4. **Ver Ramas Existentes**:
+                        <p> En tu terminal:
+                            <p>```bash
+                            git branch
+                            ```
+                        <p> - En GitHub: Ve a la pestaña "Branches" para ver todas las ramas del repositorio.</p>
+                        5. **Fusionar Cambios**:
+                        <p>Primero, cambia a la rama principal:
+                            <p> ```bash
+                            git checkout main
+                            ```
+                            <p>Luego fusiona desde `nueva-caracteristica` en tu terminal:
+                            ```bash
+                            git merge nueva-caracteristica
+                            ```
+                        <p> - En GitHub: Abre un Pull Request desde `nueva-caracteristica` hacia `main`. Una vez revisado, puedes realizar el merge desde la interfaz.</p>
+                        6. **Resolver Conflictos de Merge**:
+                        <p>Si al hacer merge hay conflictos, edita los archivos indicados, resuélvelos y luego:
+                            <p>```bash
+                                git add archivo_resuelto.txt
+                            <p> git commit -m "Resuelto conflicto de merge"
+                            ```
+                            <p> - En GitHub: Si hay conflictos, se mostrarán en el Pull Request y podrás resolverlos directamente en la interfaz o localmente.</p>
+                        7. **Eliminar una Rama**:
+                        <p>Si ya fusionaste `nueva-caracteristica`, puedes eliminarla así:
+                            <p>```bash
+                                git branch -d nueva-caracteristica
+                            ```
+                            <p> - En GitHub: Una vez que el Pull Request ha sido fusionado, puedes eliminar la rama haciendo clic en "Delete branch" que aparece después de realizar el merge.</p>
+                        8. **Mantener tu Rama Actualizada**:
+                            Para mantener `nueva-caracteristica` actualizada con `main`, primero cambia a `main` y haz pull:
+                            ```bash
+                                git checkout main
+                                git pull origin main
+                            ```</p>
+                        9. **Rebase**:
+                        <p>Para aplicar tus cambios sobre `main` sin crear un commit de merge:
+                            <p>```bash
+                                git checkout nueva-caracteristica
+                            <p> git rebase main
+                            ```</p>
+                        10. **Subir Ramas al Remoto**:
+                        <p>Para subir tu nueva rama a GitHub:
+                            <p>```bash
+                                git push origin nueva-caracteristica
+                            ```</p>
+                        11. **Crear un Pull Request (PR)**:
+                        <p>Después de subir tu rama, ve a GitHub y encontrarás un botón que dice “Compare & pull request” cuando subes una nueva rama. Haz clic allí para crear tu PR.</p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
