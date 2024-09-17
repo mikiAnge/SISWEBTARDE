@@ -8,7 +8,7 @@
 <body>
     <h1>Lo de aqui abajo es codigo php, incluido en HTML</h1>
     <?php echo '<p>Hello World</p>'; ?>
-    <button><a href="../SISWEBTARDE/view/operaciones.php">Operaciones</a></button><br><br>
-    <button><a href="../SISWEBTARDE/view/formulario.html">Formulario de Datos</a></button>
+    <button><a href="/view/operaciones.php">Operaciones</a></button><br><br>
+    <button><a href="/view/formulario.html">Formulario de Datos</a></button>
 </body>
 </html>
