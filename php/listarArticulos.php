@@ -5,7 +5,7 @@
 include '../data/conexion.php';
 // Aqui realizaremos todas las funciones de peticones a la tabla Articulos
 // Almacenamos una consulta SQl en la siguiente variable
-$sql = "SELECT nombre, descripcion, precio FROM articulos";
+$sql = "SELECT id,nombre, descripcion, precio FROM articulos";
 // ejecutamos y almacenamos el resultado en una variable
 $result = $conn->query($sql);
 // verifiamos que exista algun dato en resultado
@@ -16,7 +16,11 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "<tr><td>".$row["nombre"]."</td><td>"
         .$row["descripcion"]."</td><td>"
-        .$row["precio"]."</td></tr>";
+        .$row["precio"]."</td><td>"
+        //Añadimos un boton el cual almacenara como valor el "id" de la tabla
+        ."<a href='editarArticulo.php?id=".$row["id"]."'>Editar</a>"
+        //Añadimos un boton el cual eleminara el articulo
+        ."<a href='../data/eliminar.php?id=".$row["id"]."' onclick=\"return confirm('¿Estás seguro de que deas eliminar este artículo?');\">Eliminar</a></td></tr>";
     }
     echo "</table>";
 } else {
