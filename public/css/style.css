@@ -1,0 +1,46 @@
+.navbar{
+    background-color:  #7f36f5;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+   font-family: 'Oxanium', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+body {
+    background: rgb(11, 176, 126);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/padrinos.png);
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin-left: 10%;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7f36f5;
+    color: white;
+    text-align: center;
+}
