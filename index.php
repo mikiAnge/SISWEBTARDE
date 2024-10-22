@@ -180,58 +180,7 @@ include 'data/conexion.php'; // Asegúrate de que la ruta sea correcta
 ?>
  </section>
     </main>
-    <table>
-    <thead>
-        <tr>
-            <th>Título</th>
-            <th>Género</th>
-            <th>Canal</th>
-            <th>Fecha Estreno</th>
-            <th>Duración (min)</th>
-            <th>Descripción</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Los Simpson</td>
-            <td>Animación</td>
-            <td>FOX</td>
-            <td>1989-12-17</td>
-            <td>22</td>
-            <td>La vida de una familia disfuncional en la ciudad ficticia de Springfield.</td>
-            <td>
-                <button class="btn-action">Eliminar</button>
-                <button class="btn-action">Editar</button>
-            </td>
-        </tr>
-        <!-- Repite el bloque anterior para cada programa -->
-    </tbody>
-</table>
-<section class="add-program">
-    <h1>Agregar Nuevo Programa</h1>
-    <form action="ruta/al/tu/script_de_guardado.php" method="POST"> <!-- Cambia la ruta según tu necesidad -->
-        <label for="titulo">Título:</label>
-        <input type="text" id="titulo" name="titulo" required>
-
-        <label for="genero">Género:</label>
-        <input type="text" id="genero" name="genero" required>
-
-        <label for="canal">Canal:</label>
-        <input type="text" id="canal" name="canal" required>
-
-        <label for="fecha_estreno">Fecha Estreno:</label>
-        <input type="date" id="fecha_estreno" name="fecha_estreno" required>
-
-        <label for="duracion">Duración (minutos):</label>
-        <input type="number" id="duracion" name="duracion" required>
-
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
-
-        <button type="submit" class="btn-action">Agregar Programa</button>
-        <a href="view/listar_datos.php" class="btn-back">Volver a la lista</a> <!-- Ajusta la ruta según sea necesario -->
-    </form>
+    
 </section>
 
 </body>
