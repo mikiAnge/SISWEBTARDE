@@ -154,15 +154,17 @@ require_once 'data/conexion.php';
 include 'data/conexion.php'; // Asegúrate de que la ruta sea correcta
 
 // Crear una instancia de la clase Conexion
-$conexion = new Conexion();
+//$conexion = new PDO();
 
 // Llamar al método getConnection() para obtener la conexión a la base de datos
-$db = $conexion->getConnection(); // Aquí es donde llamas al método
+//$db = $conexion->getConnection(); // Aquí es donde llamas al método
 
-if ($db) {
+//if ($db) {
     // Si la conexión es exitosa, realizar la consulta
     $query = "SELECT * FROM Programas"; // Consulta para obtener todos los programas
-    $stmt = $db->query($query); // Ejecutar la consulta
+    $stmt = $pdo->prepare($query); // Ejecutar la consulta
+    $stmt -> execute();
+    $result = $stmt -> fetchALL(PDO::FETCH_OBJ);
 
     // Recorrer los resultados y mostrarlos
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -171,13 +173,12 @@ if ($db) {
         echo '<p>Género: ' . $row['genero'] . '</p>'; // Mostrar el género del programa
         echo '</div>';
     }
-} else {
+/*} else {
     // Si la conexión falla, mostrar un mensaje de error
     echo "No se pudo conectar a la base de datos.";
-}
+}*/
 ?>
-
-        </section>
+ </section>
     </main>
     <table>
     <thead>
