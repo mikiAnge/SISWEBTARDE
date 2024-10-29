@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'panel/nav_bar.php'; ?>
-    <h2>Lista de Articulos de tienda</h2>
-    <?php
-    include '../php/listarArticulos.php';
+
+    <?php 
+    include 'panel/nav_bar.php';
+    include '../php/insertarArticulo.php'; 
     include 'panel/footer.php';
     ?>
 </body>

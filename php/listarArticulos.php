@@ -11,16 +11,16 @@ $result = $conn->query($sql);
 // verifiamos que exista algun dato en resultado
 if ($result->num_rows > 0) {
     //Formateo de los datos de resultadod, para la visualizacion de la informacion
-    echo "<table><tr><th>Nombre</th><th>Descripción</th><th>Precio</th></tr>";
+    echo "<table><tr><th>Nombre</th><th>Descripción</th><th>Precio</th><th>Editar/Eliminar</th></tr>";
     //Recorremos los valores por cada fila
     while($row = $result->fetch_assoc()) {
         echo "<tr><td>".$row["nombre"]."</td><td>"
         .$row["descripcion"]."</td><td>"
         .$row["precio"]."</td><td>"
         //Añadimos un boton el cual almacenara como valor el "id" de la tabla
-        ."<a href='editarArticulo.php?id=".$row["id"]."'>Editar</a>"
+        ."<a class='link' href='editarArticulo.php?id=".$row["id"]."'>Editar | </a>"
         //Añadimos un boton el cual eleminara el articulo
-        ."<a href='../data/eliminar.php?id=".$row["id"]."' onclick=\"return confirm('¿Estás seguro de que deas eliminar este artículo?');\">Eliminar</a></td></tr>";
+        ."<a class='link' href='../data/eliminar.php?id=".$row["id"]."' onclick=\"return confirm('¿Estás seguro de que deas eliminar este artículo?');\">Eliminar</a></td></tr>";
     }
     echo "</table>";
 } else {
