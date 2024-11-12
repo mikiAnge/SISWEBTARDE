@@ -9,8 +9,10 @@
 
     <?php 
     include 'panel/nav_bar.php';
+    if (isset($_SESSION['nombre_usuario'])) {
     include '../php/insertarArticulo.php'; 
     include 'panel/footer.php';
+    }
     ?>
 </body>
 </html>
