@@ -63,3 +63,39 @@ input[name], ::placeholder {
     opacity: 0.7;
     font-style: italic;
 }
+
+
+#boxComentarios {
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid #9d1d36;
+    border-radius: 5px;
+    background-color: #f5f2e5;
+    padding: 20px;
+
+}
+
+#boxComentarios textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+#boxComentarios button {
+    background-color: #9d1d36;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+#boxComentarios button:hover {
+    background-color: #6e1023;
+}
+

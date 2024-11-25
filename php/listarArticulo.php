@@ -25,6 +25,8 @@ if ($result->num_rows > 0) {
         ."<a href='../data/eliminar.php?id=".$row["id"]."' onclick=\"return confirm('¿Estás seguro de que deas eliminar este artículo?');\">Eliminar</a></td></tr>";
     }
     echo "</table>";
+
+    
 } else {
     echo "Consulta Vacia";
 }

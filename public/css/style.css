@@ -26,16 +26,39 @@ body {
     text-decoration: none;
 }
 
+.navbar a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    padding: 10px 5px;
+}
+
 .navbar li a:hover {
     background-color: #6e1023;
 }
-
+.navbar a:hover {
+    background-color: #6e1023;
+}
 .navbar li a{
     text-transform: uppercase;
 }
 
 
 
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+footer .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 10px;
+}
 
 footer {
     font-size: 10px;
@@ -58,4 +81,23 @@ img[src$="youtube.png"],[src$="facebook.png"] ,[src$="instagram.png"]  {
 }
 .redes-sociales{
     margin-top: 10px;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+#username{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 0;
 }
