@@ -18,12 +18,20 @@ th{
 th, h2{
     text-transform: uppercase;
 }
-h2 {
+h2, h5 {
     font-family: sans-serif;
     font-size: 3em;
     font-weight: bold;
     text-align: center;
+    
+}
+h2 {
     color: #9d1d36;
+}
+h5 {
+    color: #f5f2e5;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 a {
     background-color: #9d1d36;

@@ -8,11 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include 'panel/nav_bar.php'; ?>
-    <h2>Lista de Programas de television</h2>
-<?php
-include '../php/listarArticulo.php'
-?>
-    <?php include 'panel/footer.php'; ?>
+
+    <?php
+    include '../view/listar_datos.php'
+    ?>
 </body>
 </html>

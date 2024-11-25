@@ -1,0 +1,39 @@
+    .contenedor{
+        width: 30%;
+        margin: 100px auto 100px auto;
+        background-color: #9d1d36;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .campo{
+        margin-bottom: 20px;
+        color: #f5f2e5;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+        
+        text-align: center;
+
+    }
+    input[type="email"],input[type="text"],input[type="password"]{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #6e1023;
+        color: #f5f2e5;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+::placeholder {
+    color: #888;
+    opacity: 2;
+}
