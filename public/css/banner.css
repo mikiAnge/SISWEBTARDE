@@ -5,7 +5,7 @@ body, html {
   }
   
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://png.pngtree.com/png-clipart/20220615/original/pngtree-online-cinema-banner-vector-poster-png-image_8031870.png");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgba(255, 255, 255, 0.788);
   }
   
   .hero-text button {
@@ -27,13 +27,13 @@ body, html {
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: black;
+    color: rgb(17, 0, 255);
     background-color: #ddd;
     text-align: center;
     cursor: pointer;
   }
   
   .hero-text button:hover {
-    background-color: #555;
-    color: white;
+    background-color:blue;
+    color: rgba(35, 6, 163, 0.966);
   }

@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    
+   
     $conn->close();
 }
 ?>
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <?php include './panel/navbar.php'; ?>
-  <center><h1>Menu de Programas</h1></center>  
+  <center><h1>Formulario de Programas</h1></center>  
     
     <div class="divform">
     <form action="formulario.php" method="POST">

@@ -20,6 +20,6 @@ include '../data/conexion.php';
                 } else {
                     echo "<tr><td colspan='4'>No hay datos disponibles</td></tr>";
                 }
-               
+                
                 $conn->close();
                 ?>

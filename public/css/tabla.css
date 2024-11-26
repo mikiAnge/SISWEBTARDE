@@ -26,7 +26,7 @@ tr:nth-child(even) {
   margin: 4px 2px;
   cursor: pointer;
 }
-.button2 {background-color: #ba007c;} 
-.button3 {background-color: #1768ab;}  
-.button4 {background-color: #e7e7e7; color: black;}
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;} 
+.button4 {background-color: #e7e7e7; color: black;} 
 .button5 {background-color: #555555;} 

@@ -1,3 +1,3 @@
 <div class="footer">
-<p>© Jhonny Mendoza Pantoja CCA</p>
+<p>JHONNY MENDOZA PELIS PLUS</p>
 </div>
