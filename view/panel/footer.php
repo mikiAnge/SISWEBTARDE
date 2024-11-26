@@ -1,3 +1,3 @@
 <div class="footer">
-<p>NETFLIX 2024 by JHOJAN MEJIA</p>
+<p>NETFLIX 2024 BY JHOJAN MEJIA</p>
 </div>

@@ -1,16 +1,12 @@
 <?php
-
 include 'conexion.php';
-
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    
     $sql = "SELECT titulo, genero, canal, fecha_estreno, duracion, descripcion FROM programas WHERE id = $id";
     $result = $conn->query($sql);
 
-    
     if (!$result) {
         echo "Error en la consulta: " . $conn->error;
         exit();

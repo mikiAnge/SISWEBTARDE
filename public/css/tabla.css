@@ -12,12 +12,12 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #fa7c7c;
+  background-color: #ff5959;
 }
 .button {
-  background-color: #04AA6D; 
+  background-color: #04AA6D;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 5px;
   text-align: center;
   text-decoration: none;
@@ -26,7 +26,7 @@ tr:nth-child(even) {
   margin: 4px 2px;
   cursor: pointer;
 }
-.button2 {background-color: #000000;} 
-.button3 {background-color: #ff1100;}   
+.button2 {background-color: #000000;}
+.button3 {background-color: #f44336;}
 .button4 {background-color: #e7e7e7; color: black;} 
-.button5 {background-color: #555555;} 
+.button5 {background-color: #555555;}

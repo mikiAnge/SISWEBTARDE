@@ -1,13 +1,9 @@
 <?php
-
 include 'conexion.php';
-
 
 $id = $_GET['id'];
 
-
 $sql = "DELETE FROM programas WHERE id=$id";
-
 
 if ($conn->query($sql) === TRUE) {
     echo "Registro eliminado exitosamente";
@@ -16,7 +12,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error al eliminar el registro: " . $conn->error;
 }
-
 
 $conn->close();
 ?>

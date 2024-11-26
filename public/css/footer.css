@@ -3,7 +3,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(255, 0, 0);
+    height: 11%;
+    background-color: red;
     color: rgb(0, 0, 0);
     text-align: center;
  }
