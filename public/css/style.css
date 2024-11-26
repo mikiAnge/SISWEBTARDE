@@ -1,0 +1,95 @@
+h1{
+	font-size: 100px;
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 120px;
+}
+
+/* Encabezados */
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+	
+}
+
+/* Tabla */
+.container{
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e5b1f1;
+}
+
+table th, table td {
+    border: 1px solid #e9ecef;
+    padding: 10px;
+    text-align: left;
+    color: #333;
+}
+
+table th {
+    background-color: #4a385c;
+    color: white;
+	margin-top: 30px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #4a385c;
+}
+
+/* Contenedor del formulario */
+.formularios .formularios1 form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 475px;
+}
+
+/* Estilo de los labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo de los inputs */
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón de submit */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Hover efecto para el botón de submit */
+form input[type="submit"]:hover {
+    background-color: #8c3ca0;
+}

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    height: 50px;
+    background: #34204d;
+    color: #fff;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+#btm {
+    display: none;
+}
+
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu ul {
+    background: #35284688;
+    display: flex;
+    list-style: none;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: rgb(185, 121, 151);
+}
+
+.menu a span {
+    margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+    position: static;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+  }
+
+@media (max-width: 768px) {
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        transform: translate(-100%);
+        transition: all 0.3s;
+        z-index: 9;
+    }
+
+    .menu ul {
+        background: #352846;
+        display: flex;
+        list-style: none;
+    }
+
+    .menu ul li:hover ul {
+        display: none;
+    }
+
+    .menu a span {
+        position: absolute;
+        right: 5px;
+    }
+
+    #btm:checked ~ .menu {
+        transform: translate(0%);
+    }
+
+    .menu ul ul {
+        background: rgb(209, 165, 211);
+    }
+
+    .menu ul ul a {
+        padding: 15px 40px;
+    }
+}
+
+
+
+footer {
+    background-color: #5f5668;
+    padding: 20px 0;
+    color: #c0bdbd;
+  }
+  
+  footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .container {
+    max-width: 1170px;
+    margin-top: 15px;
+  }
+  
+  footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  footer .col-md-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 15px;
+  }
+  
+  footer .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 10px;
+  }
