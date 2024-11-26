@@ -35,6 +35,16 @@ h1 {
     margin-left: 10%;
 }
 
+.padrinos {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/padrinos.png);
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin-left: 10%;
+}
+
 .footer {
     position: relative;
     left: 0;
