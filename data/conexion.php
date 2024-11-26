@@ -1,12 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "programastelevisivos";
+$host = 'localhost'; 
+$usuario = 'root'; 
+$contrasena = ''; 
+$base_datos = 'programastelevisivos'; 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+
+
+$conn = new mysqli($host, $usuario, $contrasena, $base_datos);
+
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
-?>  
+?>

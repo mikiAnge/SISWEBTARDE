@@ -1,7 +1,10 @@
 <?php
+
 include '../data/conexion.php';
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
     $titulo = $_POST['titulo'];
     $genero = $_POST['genero'];
     $canal = $_POST['canal'];
@@ -9,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $duracion = $_POST['duracion'];
     $descripcion = $_POST['descripcion'];
 
-
+    
     $sql = "INSERT INTO programas (titulo, genero, canal, fecha_estreno, duracion, descripcion) 
             VALUES ('$titulo', '$genero', '$canal', '$fecha_estreno', '$duracion', '$descripcion')";
 
-
+    
     if ($conn->query($sql) === TRUE) {
         echo "Registro exitoso";
         echo "<br>";
@@ -22,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-  
+    
     $conn->close();
 }
 ?>
@@ -40,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <?php include './panel/navbar.php'; ?>
-  <center><h1>Formulario de Registro</h1></center>  
+  <center><h1>Ingresar Datos de las Peliculas o Series</h1></center>  
     
     <div class="divform">
     <form action="formulario.php" method="POST">

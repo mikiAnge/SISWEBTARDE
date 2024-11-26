@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php include './panel/navbar.php'; ?>
-  <center><h1>Programas</h1></center>  
+  <center><h1>Lista de Programas</h1></center>  
   <?php include '../php/select.php'; ?>
   <table>
   <thead>

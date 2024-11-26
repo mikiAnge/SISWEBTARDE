@@ -10,8 +10,8 @@ input[type=text], select {
   
   input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ee2c0a;
+    color: rgb(255, 195, 30);
     padding: 14px 20px;
     margin-bottom: 50px;
     border: none;
@@ -37,7 +37,7 @@ input[type=text], select {
     box-sizing: border-box;
 }
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #f0410c;
   }
   
   .divform {

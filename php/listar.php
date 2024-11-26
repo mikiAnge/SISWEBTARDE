@@ -1,7 +1,7 @@
 <?php
 include '../data/conexion.php';
                 if ($result->num_rows > 0) {
-                
+                    
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>";
                         echo "<td>" . $row["id"] . "</td>";
@@ -20,6 +20,6 @@ include '../data/conexion.php';
                 } else {
                     echo "<tr><td colspan='4'>No hay datos disponibles</td></tr>";
                 }
-            
+                
                 $conn->close();
                 ?>

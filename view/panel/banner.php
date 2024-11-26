@@ -1,6 +1,6 @@
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">PROGRAMAS TELEVISIVOS ANDRES</h1>
-   <a href="/SISWEBTARDE-Andres/view/listarDatos.php"><button>Ver tablas</button></a> 
+    <h1 style="font-size:50px">CRUD PARA "PROGRAMAS TELEVISIVOS"</h1>
+   <a href="/SISWEBTARDE-andresramirez/view/listarDatos.php"><button>CATALOGO</button></a> 
   </div>
 </div>

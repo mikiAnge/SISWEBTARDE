@@ -1,3 +1,3 @@
 <div class="footer">
-<p>Andres Seña</p>
+<p>Andres PLUS CUEVANA PRO</p>
 </div>
