@@ -1,3 +1,3 @@
 <div class="footer">
-<p>henry gareca "H&S"</p>
+<p>© Henry 2024 - Todos los derechos reservados.</p>
 </div>
