@@ -1,13 +1,14 @@
 <?php
-$host = 'localhost';
-$db = 'ProgramasTelevisivos';
-$user = 'root'; // Cambia esto si tienes otro usuario
-$pass = ''; // Cambia esto si tienes contraseña
+$servername = "localhost";
+$username = "root";
+$password = ""; // Cambia la contraseña si la tienes configurada
+$dbname = "programastelevisivos";
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo "Conexión fallida: " . $e->getMessage();
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+    die("Conexión Fallida: " . $conn->connect_error);
 }
 ?>

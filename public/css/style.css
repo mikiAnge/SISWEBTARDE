@@ -1,346 +1,321 @@
-* {
-    box-sizing: border-box;
+/* Fondo y fuente */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #141414; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #141414;
-    color: white;
-}
-
-header {
-    background-color: #141414;
-}
-
+/* Navbar estilo Netflix */
 .navbar {
+    background-color: #e50914; /* Rojo Netflix */
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
-.navbar a.logo {
-    font-size: 24px;
-    color: #e50914;
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
     text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #e50914;
+.navbar li a:hover {
+    background-color: #b00710; /* Efecto hover */
 }
 
-main {
-    padding: 20px;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.programas-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.programa {
-    background-color: #333;
-    border-radius: 8px;
+/* Tarjetas estilo Netflix */
+.card {
+    background-color: #222;
+    border-radius: 10px;
     overflow: hidden;
-    width: calc(25% - 20px); /* Ajusta según la cantidad de programas por fila */
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.programa img {
+.card img {
     width: 100%;
     height: auto;
+    border-bottom: 2px solid #e50914;
 }
 
-.info {
-    padding: 10px;
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
 }
 
-.info h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.card p {
+    margin: 10px;
+    font-size: 1em;
+    color: #bbb;
 }
 
-footer {
-    background-color: #141414;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* Estilo general para botones */
-.btn {
-    background-color: #e50914; /* Color de fondo rojo característico de Netflix */
-    color: white; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
-    margin: 5px; /* Espaciado entre botones */
-}
-
-.btn:hover {
-    background-color: #f40612; /* Color más oscuro al pasar el ratón */
-    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
-}
-
-.btn:active {
-    transform: scale(0.95); /* Efecto de reducción al hacer clic */
-}
-
-/* Estilo específico para los botones en la navegación */
-.nav-buttons {
-    text-align: center; /* Centrar botones */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-}
-/* Estilo general para el cuerpo */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #141414; /* Color de fondo oscuro */
-    color: white; /* Color de texto blanco */
-}
-
-/* Estilo de la barra de navegación */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222; /* Color de fondo de la barra */
-    padding: 10px 20px; /* Espaciado interno */
-}
-
-.navbar a.logo {
-    font-size: 24px;
-    color: #e50914; /* Color de la marca */
+.card a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
     text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-/* Estilo de los enlaces en la barra de navegación */
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.card a:hover {
+    background-color: #b00710;
 }
 
-.navbar nav ul li {
-    margin-left: 20px; /* Espaciado entre enlaces */
+
+/* Estilo para los íconos de redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.navbar nav ul li a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de fuente */
+.redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-/* Estilo general para botones */
-.btn {
-    background-color: #e50914; /* Color de fondo rojo característico de Netflix */
-    color: white; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
-    margin: 5px; /* Espaciado entre botones */
+.redes-sociales img {
+    width: 24px; /* Tamaño pequeño de los íconos */
+    height: 24px;
+    transition: transform 0.3s;
 }
 
-.btn:hover {
-    background-color: #f40612; /* Color más oscuro al pasar el ratón */
-    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
-}
-
-.btn:active {
-    transform: scale(0.95); /* Efecto de reducción al hacer clic */
-}
-
-/* Estilo específico para los botones en la navegación */
-.nav-buttons {
-    text-align: center; /* Centrar botones */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-}
-
-/* Estilo para el contenedor de programas */
-.programas-container {
-    display: flex;
-    flex-wrap: wrap; /* Permitir que los programas se envuelvan en múltiples líneas */
-    justify-content: center; /* Centrar los programas */
-    margin: 20px; /* Espaciado alrededor del contenedor */
-}
-
-/* Estilo para cada programa */
-.programa {
-    background-color: #333; /* Color de fondo de cada programa */
-    border-radius: 8px; /* Bordes redondeados */
-    margin: 10px; /* Espaciado entre programas */
-    overflow: hidden; /* Ocultar desbordes */
-    width: 200px; /* Ancho fijo */
-    text-align: center; /* Centrar contenido */
-    transition: transform 0.3s; /* Transición suave */
-}
-
-.programa:hover {
-    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
-}
-
-/* Estilo para las imágenes de los programas */
-.programa img {
-    width: 100%; /* Ajustar la imagen al ancho del contenedor */
-    border-bottom: 4px solid #e50914; /* Borde inferior rojo */
-}
-
-/* Estilo para la información del programa */
-.info {
-    padding: 10px; /* Espaciado interno */
-}
-
-h1 {
-    text-align: center; /* Centrar título */
+.redes-sociales img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
 }
 
 /* Estilo para el pie de página */
 footer {
-    text-align: center; /* Centrar texto */
-    padding: 20px 0; /* Espaciado interno */
-    background-color: #222; /* Color de fondo del pie de página */
-    position: relative;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 0.9em;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
-/* Estilo general para la tabla de programas */
-table {
-    width: 100%; /* Ancho total */
-    border-collapse: collapse; /* Colapsar bordes */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-    background-color: #222; /* Color de fondo oscuro */
+
+
+/* Estilos para la barra de navegación (estilo Netflix) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #881515; /* Fondo oscuro estilo Netflix */
+    padding: 1px 2px;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Estilo para los encabezados de la tabla */
-th {
-    background-color: #e50914; /* Color de fondo rojo para los encabezados */
-    color: white; /* Color de texto blanco */
-    padding: 10px; /* Espaciado interno */
-    text-align: left; /* Alinear texto a la izquierda */
+.navbar .logo {
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Estilo para las celdas de la tabla */
-td {
-    padding: 10px; /* Espaciado interno */
-    border-bottom: 1px solid #444; /* Borde inferior de las celdas */
-    color: white; /* Color de texto blanco */
+.navbar .logo a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-/* Estilo para las filas al pasar el ratón */
-tr:hover {
-    background-color: #333; /* Color de fondo al pasar el ratón */
+.navbar .logo a:hover {
+    color: #e50914; /* Cambio de color al pasar el mouse */
 }
 
-/* Estilo para los botones de acción */
-.btn-action {
-    background-color: #e50914; /* Color de fondo rojo */
-    color: white; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 5px 10px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 14px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Transición suave */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
-.btn-action:hover {
-    background-color: #f40612; /* Color más oscuro al pasar el ratón */
-}
-/* Estilo general para el formulario */
-.add-program {
-    max-width: 600px; /* Ancho máximo */
-    margin: 20px auto; /* Centrar el formulario */
-    padding: 20px; /* Espaciado interno */
-    background-color: #222; /* Fondo oscuro */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
-    color: white; /* Color del texto */
+.navbar li {
+    display: inline-block;
 }
 
-/* Estilo para las etiquetas del formulario */
-label {
-    display: block; /* Mostrar etiquetas en bloque */
-    margin-bottom: 5px; /* Espaciado inferior */
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
 }
 
-/* Estilo para los campos de entrada */
-input[type="text"],
-input[type="date"],
-input[type="number"],
-textarea {
-    width: 100%; /* Ancho total */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 15px; /* Espaciado inferior */
-    border: 1px solid #444; /* Borde */
-    border-radius: 4px; /* Bordes redondeados */
-    background-color: #333; /* Color de fondo */
-    color: white; /* Color del texto */
+.navbar li a:hover {
+    background-color: #e50914; /* Rojo Netflix */
+    color: black; /* Cambiar el color del texto al pasar el mouse */
 }
 
-/* Estilo para el botón de agregar */
-.btn-action {
-    background-color: #e50914; /* Color de fondo rojo */
-    color: white; /* Color de texto blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    padding: 10px 15px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Transición suave */
+/* Estilo para el menú de usuario */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Efecto al pasar el ratón sobre el botón */
-.btn-action:hover {
-    background-color: #f40612; /* Color más oscuro al pasar el ratón */
+.user-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilo para el botón de volver */
-.btn-back {
-    display: inline-block; /* Mostrar como bloque en línea */
-    margin-top: 10px; /* Espaciado superior */
-    color: #e50914; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    padding: 10px 15px; /* Espaciado interno */
-    border: 1px solid #e50914; /* Borde rojo */
-    border-radius: 4px; /* Bordes redondeados */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+.user-menu a:hover {
+    background-color: #e50914; /* Efecto hover */
+    color: black;
 }
 
-/* Efecto al pasar el ratón sobre el botón de volver */
-.btn-back:hover {
-    background-color: #e50914; /* Color de fondo rojo al pasar el ratón */
-    color: white; /* Cambiar texto a blanco */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.user-info span {
+    font-size: 1.1em;
+}
+
+/* Estilo de la barra de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Organiza los enlaces verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .navbar li a {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    .user-menu {
+        gap: 10px;
+    }
+}
+/* Estilo para los títulos principales */
+h2 {
+    font-size: 3em; /* Tamaño grande */
+    font-weight: bold;
+    color: #ffffff; /* Color blanco */
+    text-align: center;
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra de texto para hacerlo más llamativo */
+    margin-top: 50px;
+}
+
+/* Estilo para los subtítulos "ESTOS SON NUESTROS PROGRAMAS MÁS DESTACADOS" */
+.featured h3 {
+    font-size: 3em; /* Tamaño grande */
+    font-weight: bold;
+    color: #e50914; /* Rojo Netflix */
+    text-align: center;
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilo para las tarjetas de los programas destacados */
+.featured-programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.3em;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.card a {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #b00710;
+}
+
+/* Hacer las tarjetas responsivas para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .featured-programs {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }

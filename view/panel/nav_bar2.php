@@ -1,15 +1,14 @@
 <nav class="navbar">
     <div class="logo">
-        <a href="index.php" class="brand">Mi Proyecto</a> <!-- Puedes poner tu logo aquí -->
+        <a href="index.php" class="brand">Mi Proyecto</a> <!-- Logo de tu proyecto -->
     </div>
-    <ul>
-        <li><a href="index.php">Inicio</a></li> <!-- Botón "Inicio" -->
-        <li><a href="listar_datos.php">Programas</a></li>
-        <li><a href="insertar_datos.php">Agregar Programa</a></li>
+    <ul class="nav-links">
+        <li><a href="../listar_datos.php">Lista de Programas</a></li>
+        <li><a href="../insertar_datos.php">Agregar Programa</a></li>
         <li><a href="#">Ayuda</a></li>
         <li><a href="#">Contactos</a></li>
     </ul>
-    <!-- Menú de usuario -->
+
     <div class="user-menu">
         <?php 
         if (session_status() == PHP_SESSION_NONE) { session_start(); }

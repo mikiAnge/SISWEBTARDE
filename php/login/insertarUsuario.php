@@ -1,26 +1,24 @@
 <?php
 include('../../data/conexion.php');
 
-// Verificamos que se recibio los datos del formulario
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $correo = $_POST['correo'];
-    $contraseña = $_POST['contraseña'];
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    // Funcion que encripta la contraseña
-    $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+    $contraseña_hash = password_hash($password, PASSWORD_DEFAULT);
 
-    // Usar declaraciones por separado para evitar inyeciones de codigo SQL
-    $stmt = $conn->prepare("INSERT INTO usuario (username, correo, contraseña) VALUES (?,?,?)");
-    $stmt ->bind_param("sss",$username,$correo,$contraseña_hash);
+    $stmt = $conn->prepare("INSERT INTO usuarios (nombre, email, password) VALUES (?,?,?)");
+    $stmt ->bind_param("sss",$nombre,$email,$contraseña_hash);
 
     if ($stmt->execute()) {
-        echo "Datos insertados exitosamente";
+        echo "<script>alert('Datos insertados exitosamente'); window.location.href='../../view/login/singIn.php';</script>";
+
     } else {
         echo "Error al insertar los datos: ".$stmt->error;
     }
-    //Cerramos la segunda conexion abierta
+
     $stmt->close();
 }
-$conn->close();//Cerramos la primera conexion abierta
+$conn->close();
 ?>

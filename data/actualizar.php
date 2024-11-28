@@ -1,18 +1,21 @@
 <?php
-include 'conexion.php';
+include "../data/conexion.php";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $id = $_POST['id'];
-    $titulo = $_POST['titulo'];
-    $genero = $_POST['genero'];
-    $canal = $_POST['canal'];
-    $fecha_estreno = $_POST['fecha_estreno'];
-    $duracion = $_POST['duracion'];
-    $descripcion = $_POST['descripcion'];
+$id = $_POST['id'];
+$titulo = $_POST['titulo'];
+$genero = $_POST['genero'];
+$canal = $_POST['canal'];
+$fecha_estreno = $_POST['fecha_estreno'];
+$duracion = $_POST['duracion'];
+$descripcion = $_POST['descripcion'];
 
-    $stmt = $pdo->prepare("UPDATE Programas SET titulo = ?, genero = ?, canal = ?, fecha_estreno = ?, duracion = ?, descripcion = ? WHERE id = ?");
-    $stmt->execute([$titulo, $genero, $canal, $fecha_estreno, $duracion, $descripcion, $id]);
+$sql = "UPDATE programas SET titulo='$titulo', genero='$genero', canal='$canal', fecha_estreno='$fecha_estreno', duracion='$duracion', descripcion='$descripcion' 
+WHERE id=$id";
 
-    header("Location: ../view/listar_datos.php");
+if ($conn->query($sql) === TRUE) { 
+    echo "Registro actualizado correctamente";
+    header("Location: ../view/listar_datos.php"); exit();
+}else {
+    echo "Error actualizando el registro: ". $conn->error;
 }
 ?>
